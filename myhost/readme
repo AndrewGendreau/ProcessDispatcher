@@ -1,0 +1,29 @@
+NAME: Andrew Gendreau
+DATE: Nov 2th 2015
+VERSION: 1.0
+FILENAME: readme
+
+DESCRIPTION:
+myhost is a four level priority dispatcher simulator operating on four priority levels. Each executing process is simulated by using a thread for each process, using queues of threads as priority queues. Myhost operates within the constraints of a finite amount of resources, consisting of: two printers, one scanner, one modem, two CD drives and 1024 Mbytes of memory. Myhost has four prioirty levels with 0 being the highest priority assigned to real time processes and 3 being the lowest, levels 1-3 are meant for normal user processes. Levels 1-3 are handled using a time sliced feedback scheduler using a time of one second as a basic time quantum. Level 0 processes preempt any running process and run right away to completion with a FCFS technique. Myhost takes an input file to be called input.txt as processes
+to execute.
+
+LANGUAGE:
+C programming language with ANSI standard libraries supported.
+
+SHELl:
+Uses the bash shell.
+
+
+FILES INCLUDED:
+job.c jobQueue.c fileReader.c executingProcess.c myhost.c dispatchQueue.c dataOutput.c resources.c dispatcher.c experiment.c
+Documentation.doc, Documentation.pdf, script
+
+HOW TO COMPILE:
+Unzip f15csc521p2_gendreau.tar.gz
+Once unzipped enter the myhost directory
+Use make to create the executable 
+Then, place an input file called "input.txt" into the directory
+
+CLEAN:
+Enter make clean
+
